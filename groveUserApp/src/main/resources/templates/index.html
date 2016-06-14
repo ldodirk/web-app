@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+ 
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/groveCSS.css"
+          th:href="@{css/groveCSS.css}" rel="stylesheet" media="screen"/>
+    
+</head>
+<body>
+<h1>Proposals</h1>
+	<form action="#" th:action="@{/index}" th:object="${newUser}" method="post">
+		<fieldset>
+			<legend>Login</legend>
+			<label for="username">Username:</label>
+			<input type="text" th:field="*{username}" required="required" /><br />
+			<label for="password">Password:</label>
+			<input type="password" th:field="*{password}" required="required" /><br />
+			<input type="submit" value="create"/>
+		</fieldset>
+	</form>	
+</body>
+</html>

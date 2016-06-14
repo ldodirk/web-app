@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head lang="en">
+	
+		<title>Beats by Dre</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  		<link href="../static/css/screen.css"
+          	th:href="@{css/screen.css}" rel="stylesheet" media="screen"/>
+		<script type="text/javascript" src="../static/js/jsdoc.js" th:src="@{js/jsdoc.js}"></script>
+		
+	</head>
+	<body onkeydown="keyPressed(event);">
+		<h1></h1>
+		<div tabindex="0" onkeydown="keyPressedSlide(event);" id="slideshow">
+			<img src="images/beats1.jpg" id="p1" alt="Beats by Dre" />
+			<img src="images/beats2.jpg" id="p2" alt="Beats by Dre" />
+			<img src="images/beats3.jpg" id="p3" alt="Beats by Dre" />
+			<img src="images/beats4.jpg" id="p4" alt="Beats by Dre" />
+		</div>
+		<div id="slidebuttons">
+			<form class="slidebutton">
+				<input type="button" onclick="changeSlide();" class="slidebuttons" id="sb1" value="" />
+				<input type="button" onclick="changeSlide();" class="slidebuttons" id="sb2" value="" />
+				<input type="button" onclick="changeSlide();" class="slidebuttons" id="sb3" value="" />
+				<input type="button" onclick="changeSlide();" class="slidebuttons" id="sb4" value="" />
+			</form>
+		</div>
+		<div id="buttons">
+			<form class="button">
+				<input type="button" class="buttons" id="b1" value="headphones" />
+				<input type="button" class="buttons" id="b2" value="earphones" />
+				<input type="button" class="buttons" id="b3" value="speakers" />
+				<input type="button" class="buttons" id="b4" value="explore" />
+			</form>
+		</div>
+	</body>
+</html>
